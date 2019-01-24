@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+  		<title>IndiaMotorBikes</title>
+  		
+ 		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		
+  		<link rel="icon" type="image/x-icon" href="favicon.ico">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"> 
+		
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/concept.css">
+ 
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		
+		<script src="../data/mock-ourexpenditure.js"></script>
+		
+	</head>
+	
+	<body data-ng-app="expeditionApp" data-ng-controller="expeditionCtrl">
+	
+	<div class="row">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light w-100 top-bar" style="background-color: #171313de !important;">
+					<a class="navbar-brand" href="#"><span class="trendTrip">Trending Trips&nbsp;</span><a href="{{obj.url}}"><span class="trendtripFlash">{{obj.text}}</span></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto">
+									<li class="nav-item active">
+											<a class="nav-link" href="../index.html">Home </a>
+									</li>
+									<li class="nav-item">
+											<a class="nav-link" href="concept.html">Concept</a>
+									</li>
+									<li class="nav-item ">
+											<a class="nav-link" href="expeditions.html">Our Expeditions<span class="sr-only">(current)</span></a>
+									</li>
+									<li class="nav-item">
+											<a class="nav-link" href="customised_tours.html">Customised Tour</a>
+									</li>
+									<li class="nav-item">
+											<a class="nav-link" href="contact_us.html">Contact Us</a>
+									</li>
+									<li class="nav-item">
+											<a class="nav-link disabled" href="#" style="background-color: #00000000 !important;"><i class="btn-floating btn-lg btn-fb fa fa-facebook" aria-hidden="true"></i></a>
+									</li>
+									<li class="nav-item"> 
+											<a class="nav-link disabled" href="#" style="background-color: #00000000 !important;"><i class="btn-floating btn-lg btn-fb yT fa fa-youtube" aria-hidden="true"></i></a>
+									</li>
+							</ul>
+					</div>
+			</nav>
+	</div>
+	
+	<!-- <div>
+		<input class="contactusDisplay" type="button" value="CONTACT-US" onclick="openNav()" id="rotate" />
+	</div> -->
+	
+		<div class="container col-md-12" id="choose">
+  <div class="row">
+    <div class="box col-md-4" data-ng-repeat="expenditure in expendituredetails" data-ng-click="showExpenditureDetails(expenditure)">
+      <ul class="expendituredetails" style="list-style-type: none;">
+        <li>
+
+          <!-- remove anchor tag to route to ourexpendituresummary page -->
+
+            <a href=""> 
+            <div class="choose-wrapper">
+              <img src="{{expenditure.url}}" class="img-responsive" alt="choose img 10">
+            </div>
+            <div class="img-title featured-content-title">
+                <h2 class="display-4 expenTitle expenhighlight"><div class="b">{{expenditure.expenditionName}}</div>
+              <span style="font-weight: 900;overflow: hidden;">{{expenditure.bikeTour}}</span></h2>
+            </div>	
+          </a>
+        </li>
+      </ul>
+    </div>
+	</div>
+	<div class="row">
+		  <!-- footer -->
+			<footer>
+					<div class="container-fluid padding">
+					<div class="row text-center">
+						<div class="col-md-4">
+							<img src="../assets/images/LogoContact.png">
+							<br><br>
+							<h3 class="motorbike-footer-title">INDIA MOTORBIKE TOUR</h3>
+							<p style="text-align: -webkit-center;">Our primary motive is to provide best bike tour packages which live up to the expectations of our clients.</p>
+						</div>
+						<div class="col-md-4">
+							<hr class="light">
+							<h3>LOCATIONS</h3>
+							<hr class="light">
+							<p>Manali Office</p>
+							<p>Village Siyal Bagh,</p>
+							<p>Distt.Kullu Manali,175131</p>
+							<p>Himachal Pradesh.</p>
+						</div>
+						<div class="col-md-4">
+							<hr class="light">
+							<h3>QUICK CONTACT</h3>
+							<hr class="light">
+							<p>+91 – 7807152124</p>
+							<p>+91 – 9560022171</p>
+							<p>+91 – 8626918644</p>
+							<p>Himachal Pradesh.</p>
+						</div>
+						<div class="col-12">
+							<hr class="light">
+							<h5>&copy;2018 INDIA Motorbike Tours . All Rights Reserved | Designed by @nalinkmr.</h5>
+						</div>
+					</div>
+				</div>
+				</footer>
+
+	</div>
+</div>
+
+
+
+
+<!-- END Modal CONTACT US POP-UP -->
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.display = "block";
+document.getElementById("mySidenav").style.width = "335px";
+document.getElementById("mySidenav").style.marginTop = "137px";
+}
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+		
+		
+		<script>
+		
+			var app = angular.module("expeditionApp",[]);
+			app.controller("expeditionCtrl", function($scope){
+				$scope.expendituredetails = expenditureDetail;
+				console.log($scope.exp);
+				
+				$scope.showExpenditureDetails = function(expenditure){
+					console.log(expenditure);
+					sessionStorage.setItem("selectedExpedition", JSON.stringify(expenditure));
+					window.location.href = './expedition/expeditionsummary.html';
+				}
+
+							$scope.indexVal = 0;
+        $scope.trendingTours = [{
+        url: "https://devilonwheels.com/manali-leh-highway-status-2018/",
+        text: 'MANALI – LEH – MANALI [13-DAYS]'
+        },
+        {
+            url: "https://devilonwheels.com/manali-leh-highway-status-2018/",
+            text: 'LEGENDRY RAJASTHAN[14-DAYS]'
+        },
+        {
+            url: "https://devilonwheels.com/manali-leh-highway-status-2018/",
+            text: 'THUNDER DRAGON – BHUTAN[13-DAYS]'
+        }];
+
+        setInterval(function(){ 
+        $scope.displayFlashUrl();
+        }, 1500);
+            
+        $scope.displayFlashUrl = function(){
+            if( $scope.indexVal == 0){
+                $scope.obj = $scope.trendingTours[$scope.indexVal];
+                $scope.$apply();
+                $scope.indexVal = $scope.indexVal + 1;
+            }else{
+                $scope.obj = $scope.trendingTours[$scope.indexVal];
+                $scope.$apply();
+                    if($scope.indexVal == $scope.trendingTours.length - 1){
+                    $scope.indexVal = 0;
+                    }else{
+                        $scope.indexVal = $scope.indexVal + 1;
+                    }
+                }
+            }
+				
+			});
+
+		</script>
+ 	
+	</body>
+
+</html>

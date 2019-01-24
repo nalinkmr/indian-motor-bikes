@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<head>
+    <meta charset="utf-8">
+      <title>IndiaMotorBikes</title>
+      
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+      <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"> 
+    
+    <link rel="stylesheet" href="css/style.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+</head>
+<title>Insert title here</title>
+</head>
+<body data-ng-app="homeApp" data-ng-controller="homeCtrl">
+<div class="container-fluid" >
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 top-bar" style="background-color: #171313de !important;">
+            <a class="navbar-brand" href="#"><span class="trendTrip">Trending Trips&nbsp;</span><a href="{{obj.url}}"><span class="trendtripFlash">{{obj.text}}</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contents/concept.html">Concept</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contents/expeditions.html">Our Expeditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contents/customised_tours.html">Customised Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contents/contact_us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" style="background-color: #00000000 !important;"><i class="btn-floating btn-lg btn-fb fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link disabled" href="#" style="background-color: #00000000 !important;"><i class="btn-floating btn-lg btn-fb yT fa fa-youtube" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row" >
+        <img class="img-fluid" alt="Responsive image" style="height: 100vh !important;"  src="assets/images/ladakh.jpg">
+        <div class="centered">
+            <div class="header-title">indiamotorbike tours</div>
+                <div class="shiftDownContent"><h3>Stunning Landscapes & Breathtaking</h3>
+                    <!-- <button type="button" class="btn btn-primary zoom">Destinations</button> -->
+                    <a href="contents/expeditions.html" class="button btn btn-primary zoom">Destinations</a>
+                </div>                
+            </div>    
+        </div>
+    </div>
+    <!-- 3rd section -->
+
+    <section>
+    <div class="row">
+        <div class="col" id="whyIndiamotors">
+            <div class="home-why-left">
+                <h2 class="pretitle1 h2">Why a tour with <span class="pretitle2 animated" id="whyIndiamotor">IndiaMotorBike ?</span></h2>
+                <p class="descripWhyus"> We will provide you the most adventurous life time experience on toughest routes in the world which are personally covered by us by designing special tour program for toughest riders who want to explore places across India. We work in unison with our parent company, BrahmaND TOUR and customize every kind of tour package as per the requirements & budget of our clients. Our team is well qualified and professional with minimum experience of 12 yrs. with multinational travel companies.</p>
+                <!-- <a href="" class="button rotateBtn">Our concept</a> -->
+                <!-- <button type="button" class="btn  rotateBtn">Our concept</button> -->
+                <a href="contents/concept.html" class="button btn  rotateBtn" style="color:white;">Our Concept</a>
+            </div>
+        </div>
+            <!-- <img src="images/ladak.jpg" class="whyusrightPos"> -->
+        
+            <div class="col-md-6 backgroundImageTyre" style="background-image: url(assets/images/ladak.jpg);">
+                <span><img class="tyreRotate"  src="assets/images/motorcycle.png"></span>
+                <span><img class="tyreRotate2" src="assets/images/motorcycle.png"></span>
+            </div>  
+    </div>
+</section>
+</div>
+
+<!-- SLIDER SECTION TRIPS -->
+<div class="container-fluid col-md-12">
+        <div class="row"></div>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner general-banner banner-layout-one"> 
+                <div class="carousel-item active general-banner-inner">
+                  <div class="row">
+                    <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/08/received_1024098004431478-2-e1535482391315-800x691.jpeg" class="card-img-top imgPreview" alt="....">
+                          <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a >Indo-Bhutan Cross Country Motorbike Expedition</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+                      <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/02/rashtrapati-niwas-2273422-800x800.jpg" class="card-img-top imgPreviewLong" alt="....">
+                            <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a>Indo-Bhutan Cross Country Motorbike Expedition</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+          
+                      <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/02/rann-utsav-800x800.jpg" class="card-img-top imgPreviewLong" alt="....">
+                            <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a ><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a >Trans Himalayan Motorbike Trip</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                    <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/08/received_1024098004431478-2-e1535482391315-800x691.jpeg" class="card-img-top imgPreview" alt="....">
+                          <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a >Indo-Bhutan Cross Country Motorbike Expedition</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+                      <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/02/rashtrapati-niwas-2273422-800x800.jpg" class="card-img-top imgPreviewLong" alt="....">
+                            <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a>Indo-Bhutan Cross Country Motorbike Expedition</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+          
+                      <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/02/rann-utsav-800x800.jpg" class="card-img-top imgPreviewLong" alt="....">
+                            <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a ><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a >Trans Himalayan Motorbike Trip</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                    <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/08/received_1024098004431478-2-e1535482391315-800x691.jpeg" class="card-img-top imgPreview" alt="....">
+                          <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a >Indo-Bhutan Cross Country Motorbike Expedition</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+                      <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/02/rashtrapati-niwas-2273422-800x800.jpg" class="card-img-top imgPreviewLong" alt="....">
+                            <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a>Indo-Bhutan Cross Country Motorbike Expedition</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+          
+                      <div class="swiper-slide banner-card swiper-slide-duplicate col-sm-4">
+                        <div class="featured-post-image">
+                          <img src="https://indiamotorbiketours.com/wp-content/uploads/2018/02/rann-utsav-800x800.jpg" class="card-img-top imgPreviewLong" alt="....">
+                            <div class="mask"></div>
+                        </div>
+                        <!-- // featured-post-image -->
+                        <div class="featured-content-holder">
+                          <div class="featured-content-meta">
+                            <a ><span class="category">Explore</span></a>
+                          </div>
+                          <div class="featured-content-title">
+                            <h2><a >Trans Himalayan Motorbike Trip</a></h2>
+                          </div>
+                          <div class="featured-posted-date">
+                            <span class="posted-date">17 December, 2017</span>
+                          </div>
+                        </div>
+                        <!-- // featured-content-holder -->
+                      </div>
+                      </div>
+                </div>
+              </div>
+      
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+      </div>
+      <!-- end of trip slider -->
+      <br>
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="assets/images/LogoContact.png">
+        <br><br>
+        <h3 class="motorbike-footer-title">INDIA MOTORBIKE TOUR</h3>
+        <p style="text-align: -webkit-center;">Our primary motive is to provide best bike tour packages which live up to the expectations of our clients.</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h3>LOCATIONS</h3>
+        <hr class="light">
+        <p>Manali Office</p>
+        <p>Village Siyal Bagh,</p>
+        <p>Distt.Kullu Manali,175131</p>
+        <p>Himachal Pradesh.</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h3>QUICK CONTACT</h3>
+        <hr class="light">
+        <p>+91 – 7807152124</p>
+        <p>+91 – 9560022171</p>
+        <p>+91 – 8626918644</p>
+        <p>Himachal Pradesh.</p>
+      </div>
+      <div class="col-12">
+        <hr class="light">
+        <h5>&copy;2018 INDIA Motorbike Tours . All Rights Reserved | Designed by @nalinkmr.</h5>
+      </div>
+    </div>
+  </div>
+  </footer>
+  
+<script>
+    var app = angular.module("homeApp",[]);
+    app.controller("homeCtrl", function($scope){        
+        $scope.indexVal = 0;
+        $scope.trendingTours = [{
+        url: "https://devilonwheels.com/manali-leh-highway-status-2018/",
+        text: 'MANALI – LEH – MANALI [13-DAYS]'
+        },
+        {
+            url: "https://devilonwheels.com/manali-leh-highway-status-2018/",
+            text: 'LEGENDRY RAJASTHAN[14-DAYS]'
+        },
+        {
+            url: "https://devilonwheels.com/manali-leh-highway-status-2018/",
+            text: 'THUNDER DRAGON – BHUTAN[13-DAYS]'
+        }];
+
+        setInterval(function(){ 
+        $scope.displayFlashUrl();
+        }, 1500);
+            
+        $scope.displayFlashUrl = function(){
+            if( $scope.indexVal == 0){
+                $scope.obj = $scope.trendingTours[$scope.indexVal];
+                $scope.$apply();
+                $scope.indexVal = $scope.indexVal + 1;
+            }else{
+                $scope.obj = $scope.trendingTours[$scope.indexVal];
+                $scope.$apply();
+                    if($scope.indexVal == $scope.trendingTours.length - 1){
+                    $scope.indexVal = 0;
+                    }else{
+                        $scope.indexVal = $scope.indexVal + 1;
+                    }
+                }
+            }
+        });
+</script>
+		<script>
+                $(function() {
+                    var rotation = 0, 
+                    scrollLoc = $(document).scrollTop();
+                    $(window).scroll(function() {
+                    var newLoc = $(document).scrollTop();
+                    var diff = scrollLoc - newLoc;
+                    rotation += diff, scrollLoc = newLoc;
+                    var rotationStr = "rotate(" + rotation + "deg)";
+                    $(".tyreRotate").css({
+                    "-webkit-transform": rotationStr,
+                    "-moz-transform": rotationStr,
+                    "transform": rotationStr
+                    });
+                    $(".tyreRotate2").css({
+                    "-webkit-transform": rotationStr,
+                    "-moz-transform": rotationStr,
+                    "transform": rotationStr
+                    });
+                    });
+                    })
+                </script>
+</body>
+</html>
